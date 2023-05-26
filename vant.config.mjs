@@ -35,6 +35,15 @@ export default {
           },
         ],
       },
+      {
+        title: 'directives',
+        items: [
+          {
+            path: 'scroll-x',
+            title: 'scroll-x pc横向滚动',
+          },
+        ],
+      },
     ],
   },
 };
