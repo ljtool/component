@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .demo-button {
   min-width: 120px;
   color: #fff;

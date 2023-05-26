@@ -32,8 +32,8 @@
   },
   "devDependencies": {
     "@vant/cli": "^6.0.0",
-    "vue": "^3.0.0",
-    "sass": "^1.49.7"
+    "sass": "^1.49.7",
+    "vue": "^3.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -44,8 +44,14 @@
   "prettier": {
     "singleQuote": true
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "browserslist": [
     "Chrome >= 51",
     "iOS >= 10"
-  ]
+  ],
+  "dependencies": {
+    "lj-utils": "^0.3.7"
+  }
 }
