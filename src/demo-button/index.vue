@@ -4,7 +4,7 @@
   </button>
 </template>
 
-<script>
+<script ts>
 export default {
   name: 'DemoButton',
 
@@ -15,13 +15,14 @@ export default {
       default: 'primary',
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">
+$color: #fff;
 .demo-button {
   min-width: 120px;
-  color: #fff;
+  color: $color;
   font-size: 16px;
   line-height: 36px;
   background-color: grey;

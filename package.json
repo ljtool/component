@@ -10,6 +10,7 @@
     "lib",
     "es"
   ],
+  "type": "module",
   "scripts": {
     "dev": "vant-cli dev",
     "lint": "vant-cli lint",
@@ -28,12 +29,19 @@
     "*.{ts,tsx,js,vue}": "eslint --fix"
   },
   "peerDependencies": {
-    "vue": "^3.0.0"
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "lj-utils": "LinJieLinLin/utils#master",
+    "vant": "^4.8.7"
   },
   "devDependencies": {
-    "@vant/cli": "^6.0.0",
-    "sass": "^1.49.7",
-    "vue": "^3.0.0"
+    "@unocss/preset-rem-to-px": "^0.58.5",
+    "@vant/cli": "^6.2.0",
+    "sass": "^1.71.1",
+    "unocss": "^0.58.5",
+    "vite": "^5.1.4",
+    "vue": "^3.4.21"
   },
   "eslintConfig": {
     "root": true,
@@ -41,17 +49,11 @@
       "@vant"
     ]
   },
-  "prettier": {
-    "singleQuote": true
-  },
   "engines": {
     "node": ">=16.0.0"
   },
   "browserslist": [
     "Chrome >= 51",
     "iOS >= 10"
-  ],
-  "dependencies": {
-    "lj-utils": "^0.3.7"
-  }
+  ]
 }
