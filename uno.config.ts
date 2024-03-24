@@ -1,6 +1,6 @@
 // uno.config.ts
-import { defineConfig, presetAttributify, presetUno } from 'unocss';
-import presetRemToPx from '@unocss/preset-rem-to-px';
+import { defineConfig, presetAttributify, presetUno } from 'unocss'
+import presetRemToPx from '@unocss/preset-rem-to-px'
 export default defineConfig({
   rules: [
     // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-useless-escape
@@ -10,9 +10,11 @@ export default defineConfig({
   presets: [
     presetAttributify({
       /* preset options */
+      prefix: 'u-',
+      prefixedOnly: true,
     }),
     presetUno(),
     presetRemToPx({ baseFontSize: 4 }),
     // ...custom presets
   ],
-});
+})
