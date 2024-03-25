@@ -32,15 +32,15 @@
     "vue": ">=3.0.0"
   },
   "dependencies": {
-    "lj-utils": "LinJieLinLin/utils#master",
+    "lj-utils": "github:LinJieLinLin/utils#master",
     "vant": "^4.8.7"
   },
   "devDependencies": {
-    "@unocss/preset-rem-to-px": "^0.58.5",
+    "@unocss/preset-rem-to-px": "^0.58.6",
     "@vant/cli": "^6.2.0",
-    "sass": "^1.71.1",
-    "unocss": "^0.58.5",
-    "vite": "^5.1.4",
+    "sass": "^1.72.0",
+    "unocss": "^0.58.6",
+    "vite": "^5.2.6",
     "vue": "^3.4.21"
   },
   "eslintConfig": {
