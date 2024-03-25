@@ -1,0 +1,33 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: GitHub Actions Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          registry-url: https://registry.npmjs.org/
+
+      - name: build
+        run: |
+          pnpm i --frozen-lockfile && pnpm build
+      # Actions->general->workflow permissions 默认只给了read权限，需要先设置成write权限
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site-dist
+          commit-message: github actions auto commit
+          branch: gh-pages

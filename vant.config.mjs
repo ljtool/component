@@ -6,7 +6,7 @@ export default {
       preprocessor: 'sass',
     },
     site: {
-      publicPath: '/lj-component/',
+      publicPath: '/component/',
     },
   },
   site: {
