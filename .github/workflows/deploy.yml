@@ -6,7 +6,7 @@ name: GitHub Actions Build and Deploy
 on:
   push:
     branches:
-      - main
+      - dev
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
