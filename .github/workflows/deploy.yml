@@ -23,7 +23,7 @@ jobs:
 
       - name: build
         run: |
-          pnpm i --frozen-lockfile && pnpm build
+          pnpm i --frozen-lockfile && pnpm build:site
       # Actions->general->workflow permissions 默认只给了read权限，需要先设置成write权限
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
