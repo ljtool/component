@@ -6,7 +6,7 @@ export default {
       preprocessor: 'sass',
     },
     site: {
-      publicPath: '/lj-component/',
+      publicPath: '/component/',
     },
   },
   site: {
@@ -42,8 +42,12 @@ export default {
             path: 'scroll-x',
             title: 'scroll-x pc横向滚动',
           },
+          {
+            path: 'mutil-click',
+            title: 'mutilClick多点触发',
+          },
         ],
       },
     ],
   },
-};
+}
