@@ -32,7 +32,7 @@
     "vue": ">=3.0.0"
   },
   "dependencies": {
-    "lj-utils": "LinJieLinLin/utils@latest",
+    "lj-utils": "LinJieLinLin/utils#master",
     "vant": "^4.8.7"
   },
   "devDependencies": {

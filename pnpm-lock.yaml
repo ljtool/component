@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   lj-utils:
-    specifier: LinJieLinLin/utils@latest
-    version: link:LinJieLinLin/utils@latest
+    specifier: LinJieLinLin/utils#master
+    version: github.com/LinJieLinLin/utils/97fab773dae8f44b5ef41a7fa56bf045ebb22004
   vant:
     specifier: ^4.8.7
     version: 4.8.7(vue@3.4.21)
@@ -3184,6 +3184,10 @@ packages:
       which: 2.0.2
     dev: true
 
+  /crypto-js@4.2.0:
+    resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
+    dev: false
+
   /crypto-random-string@4.0.0:
     resolution: {integrity: sha512-x8dy3RnvYdlUcPOjkEHqozhiwzKNSq7GcPuXFbnyMOCHxX8V3OgIg/pYuabl2sbUPfIJaeAQB7PMOK8DFIdoRA==}
     engines: {node: '>=12'}
@@ -5515,6 +5519,10 @@ packages:
     resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
     hasBin: true
     dev: true
+
+  /js-base64@3.7.7:
+    resolution: {integrity: sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw==}
+    dev: false
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -8216,3 +8224,13 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  github.com/LinJieLinLin/utils/97fab773dae8f44b5ef41a7fa56bf045ebb22004:
+    resolution: {tarball: https://codeload.github.com/LinJieLinLin/utils/tar.gz/97fab773dae8f44b5ef41a7fa56bf045ebb22004}
+    name: lj-utils
+    version: 0.5.0
+    engines: {node: '>=18.0.0', pnpm: '>6'}
+    dependencies:
+      crypto-js: 4.2.0
+      js-base64: 3.7.7
+    dev: false
