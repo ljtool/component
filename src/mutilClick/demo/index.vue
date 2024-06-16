@@ -18,11 +18,10 @@
 
 <script setup>
 import 'virtual:uno.css'
-import vMutilClick from 'lj-utils/directive/vMutilClick'
-import { Button, showToast, Space } from 'vant'
 import 'vant/lib/index.css'
+import vMutilClick from '@/directive/vMutilClick'
+import { Button, showToast, Space } from 'vant'
 import { setLog } from 'lj-utils'
-
 setLog(localStorage.getItem('logLevel'))
 const mutilClick = (msg) => {
   showToast(msg)

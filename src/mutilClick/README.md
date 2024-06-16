@@ -7,14 +7,14 @@ mutilClick连点触发
 ### 引入
 
 ```js
-import scrollX from 'lj-utils/directives/scrollX';
+import vMutilClick from 'lj-component/directives/vMutilClick';
 directives: {
-   scrollX: scrollX,
+   mutilClick: vMutilClick,
 },
 // vue3 setup
-import vScrollX from 'lj-utils/directive/scrollX';
+import vMutilClick from 'lj-component/directive/vMutilClick';
 // 或
-import {scrollX as vScrollX} from 'lj-utils/directive/scrollX';
+import {vMutilClick} from 'lj-component/directive/vMutilClick';
 ```
 
 ## 代码演示
@@ -22,10 +22,9 @@ import {scrollX as vScrollX} from 'lj-utils/directive/scrollX';
 ### 基础用法
 
 ```html
-<div
-  v-scroll-x
-  style="height: 100px; width: 100vw; background: grey; overflow: auto"
->
-  <div style="width: 200vw; background: grey">test text</div>
-</div>
+<button v-mutil-click="() => console.log(2 + '连击')">default:2连击</button>
+<button data-count="3" v-mutil-click="() => console.log(3 + '连击')">
+  default:3连击
+</button>
+<button v-mutil-click="() => console.log(2 + '连击')">default:2连击</button>
 ```

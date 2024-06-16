@@ -1,3 +1,4 @@
+// https://aresnine.github.io/technology/vantcli/
 export default {
   name: 'lj-component',
   build: {
@@ -39,12 +40,16 @@ export default {
         title: 'directives',
         items: [
           {
-            path: 'scroll-x',
-            title: 'scroll-x pc横向滚动',
+            path: 'scroll',
+            title: 'pc鼠标拖拽scroll',
           },
           {
             path: 'mutil-click',
             title: 'mutilClick多点触发',
+          },
+          {
+            path: 'lazy',
+            title: '图片视口懒加载',
           },
         ],
       },

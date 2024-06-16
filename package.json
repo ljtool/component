@@ -36,6 +36,7 @@
     "vant": "^4.8.7"
   },
   "devDependencies": {
+    "@ljtool/unocss-preset": "^0.0.3",
     "@unocss/preset-rem-to-px": "^0.58.6",
     "@vant/cli": "^6.2.0",
     "sass": "^1.72.0",
